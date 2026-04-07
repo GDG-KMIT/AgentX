@@ -301,5 +301,5 @@ Open source under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  Built with 💜 by <a href="https://github.com/Eldorado5002">Eldorado5002</a>
+  Built by <a href="https://github.com/Eldorado5002">Eldorado5002</a>
 </p>

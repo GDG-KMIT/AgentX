@@ -1,6 +1,6 @@
 /**
  * ╔═══════════════════════════════════════════════════════════════╗
- * ║                    AGENT CONFIGURATION                       ║
+ * ║                    AGENT CONFIGURATION                        ║
  * ║                                                               ║
  * ║  This is the ONLY file you need to edit to customize your     ║
  * ║  AI agent. Change the personality, memory schema, trending    ║
@@ -20,7 +20,7 @@ const agentConfig = {
   description: "I remember everything about you and get smarter the more we talk.",
 
   // ─── PERSONALITY ──────────────────────────────────────────────
-  // Write your agent's core personality. This is always included
+  // Write your agent's core personality. This is always included--
   // in the system prompt regardless of conversation depth.
   personality: `You are a curious and evolving AI conversation buddy.`,
 
@@ -81,15 +81,15 @@ const agentConfig = {
   //   type:      "string" or "array"
   //   extract:   Whether to include this key in the extraction prompt
   memorySchema: [
-    { key: "name",              label: "👤 Name",        type: "string",  extract: true  },
-    { key: "age",               label: "🎂 Age",         type: "string",  extract: true  },
-    { key: "location",          label: "📍 Location",    type: "string",  extract: true  },
-    { key: "background",        label: "🎓 Background",  type: "string",  extract: true  },
-    { key: "interests",         label: "❤️ Interests",   type: "array",   extract: true  },
-    { key: "goals",             label: "🎯 Goals",       type: "array",   extract: true  },
-    { key: "current_situation",  label: "📌 Situation",   type: "string",  extract: true  },
-    { key: "personality",       label: "✨ Personality",  type: "string",  extract: true  },
-    { key: "topics_discussed",   label: "💬 Topics",      type: "array",   extract: false },
+    { key: "name", label: "👤 Name", type: "string", extract: true },
+    { key: "age", label: "🎂 Age", type: "string", extract: true },
+    { key: "location", label: "📍 Location", type: "string", extract: true },
+    { key: "background", label: "🎓 Background", type: "string", extract: true },
+    { key: "interests", label: "❤️ Interests", type: "array", extract: true },
+    { key: "goals", label: "🎯 Goals", type: "array", extract: true },
+    { key: "current_situation", label: "📌 Situation", type: "string", extract: true },
+    { key: "personality", label: "✨ Personality", type: "string", extract: true },
+    { key: "topics_discussed", label: "💬 Topics", type: "array", extract: false },
   ],
 
   // How many user messages to batch before running memory extraction
@@ -101,18 +101,18 @@ const agentConfig = {
   // The 4 categories shown on the topic selection screen.
   // Users can pick these to start a conversation.
   trendingCategories: [
-    { category: "Tech",    icon: "💻" },
-    { category: "Sports",  icon: "🏅" },
+    { category: "Tech", icon: "💻" },
+    { category: "Sports", icon: "🏅" },
     { category: "Science", icon: "🔬" },
-    { category: "World",   icon: "🌍" },
+    { category: "World", icon: "🌍" },
   ],
 
   // Fallback topics shown when the API is unavailable or cached
   fallbackTrends: [
-    { category: "Tech",    topic: "AI agents reshaping software in 2026",  icon: "💻" },
-    { category: "Sports",  topic: "IPL 2026 opening week highlights",     icon: "🏅" },
-    { category: "Science", topic: "Quantum computing hits new milestone",  icon: "🔬" },
-    { category: "World",   topic: "G20 summit latest outcomes",           icon: "🌍" },
+    { category: "Tech", topic: "AI agents reshaping software in 2026", icon: "💻" },
+    { category: "Sports", topic: "IPL 2026 opening week highlights", icon: "🏅" },
+    { category: "Science", topic: "Quantum computing hits new milestone", icon: "🔬" },
+    { category: "World", topic: "G20 summit latest outcomes", icon: "🌍" },
   ],
 
   // How long to cache trending topics (in milliseconds)
@@ -122,6 +122,7 @@ const agentConfig = {
   // ─── VISITOR MODE ─────────────────────────────────────────────
   // When someone visits a shared agent link, this controls
   // how the AI introduces itself.
+
   visitorGreeting: (ownerName) =>
     `You are ${ownerName}'s personal AI buddy. A visitor is talking to you. Answer their questions about ${ownerName} warmly and naturally. If you don't know something, say so honestly. Keep replies 3-4 sentences.`,
 
